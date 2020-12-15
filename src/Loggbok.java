@@ -1,31 +1,16 @@
 import java.io.*;
-import java.util.Date;
 
 public class Loggbok {
     private String filename;
     private String time;
-    private String log;
-    private String text;
     private String textFile = "data.txt";
     private String data[];
-    public Date TimeEntry;
 
     public Loggbok(String filename, String time, String log) {
         this.filename = filename;
         this.time = time;
-        this.log = log;
     }
 
-    public java.util.Date getTimeEntry() {
-       TimeEntry = java.util.Calendar.getInstance().getTime();
-        System.out.println(TimeEntry);
-        return TimeEntry;
-    }
-
-
-
-
-    
     public String getFilename() {
         return filename;
     }
@@ -38,24 +23,8 @@ public class Loggbok {
         return time;
     }
 
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
-        this.text = text;
-    }
-
     public void setTime(String time) {
         this.time = time;
-    }
-
-    public String getLog() {
-        return log;
-    }
-
-    public void setLog(String log) {
-        this.log = log;
     }
 
     private void CharStreamExample() throws IOException {
