@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class View {
 
@@ -6,6 +8,10 @@ public class View {
     private JTextField textField2;
     private JTextArea textArea1;
     private JPanel Panel;
+
+    public View() {
+
+    }
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("View");
@@ -15,6 +21,13 @@ public class View {
         frame.setVisible(true);
     }
 
+    public JPanel getPanel() {
+        return Panel;
+    }
+
+    public JButton geButton() {
+        return Add;
+    }
 
 
 }
